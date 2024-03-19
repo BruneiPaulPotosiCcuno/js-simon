@@ -8,9 +8,19 @@ Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei num
     //Generare un numero casuale tra 0 e 50
     for (let i = 0; i < 5; i++) {
         randomNumbers[i] = Math.floor(Math.random() * 50);
+        // !console.log(randomNumbers);
     }
 // ? Mostra i numeri in pagina
     //*Creo un div
     const numbersDiv = document.createElement('div');
     numbersDiv.textContent = randomNumbers.join(',');
-    document.getElementById('out').appendChild(numbersDiv)
+    document.getElementById('out').appendChild(numbersDiv);
+    
+    //AVVIA IL TIMER
+    setTimeout(() => {
+        const userNumbers = [];
+        for (let i = 0; i < 5; i++) {
+            userNumbers[i] = parseInt(prompt('Dammi un numero:'));
+        }
+        
+    },30000); //>>>>>30 secondi
