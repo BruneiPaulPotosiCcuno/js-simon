@@ -12,3 +12,5 @@ Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei num
 // ? Mostra i numeri in pagina
     //*Creo un div
     const numbersDiv = document.createElement('div');
+    numbersDiv.textContent = randomNumbers.join(',');
+    document.getElementById('out').appendChild(numbersDiv)
