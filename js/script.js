@@ -28,10 +28,10 @@ Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei num
         const correctNumbers = [];
         const missedNumbers = [];
         for (let i = 0; i < randomNumbers.length; i++) {
-            if (condition) {
-                
+            if (userNumbers.includes(randomNumbers[i])) {
+                correctNumbers.push(randomNumbers[i])
             } else {
-                
+                missedNumbers.push(randomNumbers[i]);
             }
         }
     },30000); //>>>>>30 secondi
