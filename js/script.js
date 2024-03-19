@@ -15,8 +15,14 @@ Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei num
     for (const number of randomNumbers){
         //Crea un elemento per ogni numero
         const numberSpan = document.createElement('span');
+        //crea una coma 
+        numberSpan.textContent = number + ','
+        // add il span il numero al div
+        numbersDiv.appendChild(numberSpan);
     }
     
+    document.body.appendChild(numbersDiv);
+
 // ? Rimuovi i numeri dalla pagina
 
 // ? Chiedi all'utente di inserire i numeri
