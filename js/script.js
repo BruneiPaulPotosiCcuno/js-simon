@@ -7,27 +7,8 @@ Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei num
     const randomNumbers = [];
     //Generare un numero casuale tra 0 e 50
     for (let i = 0; i < 5; i++) {
-        randomNumbers.push(Math.floor(Math.random() * 100));
+        randomNumbers[i] = Math.floor(Math.random() * 50);
     }
 // ? Mostra i numeri in pagina
     //*Creo un div
     const numbersDiv = document.createElement('div');
-    for (const number of randomNumbers){
-        //Crea un elemento per ogni numero
-        const numberSpan = document.createElement('span');
-        //crea una coma 
-        numberSpan.textContent = number + ','
-        // add il span il numero al div
-        numbersDiv.appendChild(numberSpan);
-    }
-    
-    document.body.appendChild(numbersDiv);
-
-// ? Rimuovi i numeri dalla pagina
-
-// ? Chiedi all'utente di inserire i numeri
-
-// ? Verifica quali numeri sono stati indovinati
-
-// ? Mostra i risultati
-
