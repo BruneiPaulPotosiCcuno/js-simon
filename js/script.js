@@ -34,4 +34,7 @@ Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei num
                 missedNumbers.push(randomNumbers[i]);
             }
         }
+
+        //RISULTATO
+        const result = document.createElement('div');
     },30000); //>>>>>30 secondi
