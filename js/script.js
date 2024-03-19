@@ -37,5 +37,9 @@ Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei num
 
         //RISULTATO
         const result = document.createElement('div');
-        result.innerHTML = ``
+        result.innerHTML = `
+        <p>Hai indovinato${correctNumbers.length} numeri:${correctNumbers.join(',')}</p>
+        <p>Hai mancato${missedNumbers.length} numeri:${missedNumbers.join(',')}</p>
+        `;
+        
     },30000); //>>>>>30 secondi
