@@ -21,6 +21,17 @@ Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei num
         const userNumbers = [];
         for (let i = 0; i < 5; i++) {
             userNumbers[i] = parseInt(prompt('Dammi un numero:'));
+            // !console.log(userNumbers);
         }
         
+        //CHECK i numeri indovinati
+        const correctNumbers = [];
+        const missedNumbers = [];
+        for (let i = 0; i < randomNumbers.length; i++) {
+            if (condition) {
+                
+            } else {
+                
+            }
+        }
     },30000); //>>>>>30 secondi
