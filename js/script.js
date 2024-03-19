@@ -12,6 +12,10 @@ Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei num
 // ? Mostra i numeri in pagina
     //*Creo un div
     const numbersDiv = document.createElement('div');
+    for (const number of randomNumbers){
+        //Crea un elemento per ogni numero
+        const numberSpan = document.createElement('span');
+    }
     
 // ? Rimuovi i numeri dalla pagina
 
