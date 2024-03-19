@@ -37,4 +37,5 @@ Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei num
 
         //RISULTATO
         const result = document.createElement('div');
+        result.innerHTML = ``
     },30000); //>>>>>30 secondi
